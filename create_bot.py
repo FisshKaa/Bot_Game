@@ -11,7 +11,7 @@ dp = Dispatcher()
 
 @dp.message(CommandStart())
 async def cmd_start(message: Message):
-    await message.answer('Привет!')
+    await message.answer('Чтобы начать нажми кнопку снизу')
 
 async def main():
     await dp.start_polling(bot)
